@@ -2,8 +2,8 @@ from game import resolve_round
 from state import state
 from referee import configure_model
 
-
 def play_game():
+
     model = configure_model(resolve_round)
     chat = model.start_chat(enable_automatic_function_calling=True)
 

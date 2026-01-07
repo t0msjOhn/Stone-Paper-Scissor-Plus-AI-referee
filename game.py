@@ -7,6 +7,7 @@ def resolve_round(user_move: str) -> str:
     Args:
         user_move: The move chosen by the user (rock, paper, scissors, bomb).
     """
+    
     if state.game_over:
         return "The game is already over."
 

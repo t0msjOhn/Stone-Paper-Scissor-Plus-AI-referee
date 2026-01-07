@@ -4,9 +4,12 @@ import google.generativeai as genai
 
 
 def configure_model(resolve_round_callable):
-    """Configure and return a GenerativeModel configured as the game referee.
-    The caller must pass the local `resolve_round` function as a tool.
+
     """
+        Configure and return a GenerativeModel configured as the game referee.
+        The caller must pass the local resolve_round function as a tool.
+    """
+
     load_dotenv()
     api_key = os.getenv("GOOGLE_API_KEY")
     if not api_key:
